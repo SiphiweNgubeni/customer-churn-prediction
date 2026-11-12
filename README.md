@@ -4,7 +4,7 @@ An end-to-end Data Science project that uses statistical analysis and Machine
 Learning to predict customer churn and identify retention opportunities, built
 on the IBM Telco Customer Churn dataset. It ships with reproducible analysis
 notebooks, a modular training pipeline, four compared models, SHAP
-interpretability, and an interactive Streamlit dashboard.
+interpretability and an interactive Streamlit dashboard.
 
 ![Python](https://img.shields.io/badge/Python-3.13-blue)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-ML-orange)
