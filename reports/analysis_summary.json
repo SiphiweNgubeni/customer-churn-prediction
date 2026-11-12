@@ -1,0 +1,155 @@
+{
+  "descriptive": {
+    "monthly_charges_mean": 64.76169246059918,
+    "monthly_charges_median": 70.35,
+    "tenure_std": 24.55948102309446,
+    "total_charges_min": 0.0,
+    "total_charges_max": 8684.8,
+    "churn_counts": {
+      "No": 5174,
+      "Yes": 1869
+    },
+    "churn_proportions": {
+      "No": 0.7346301292063041,
+      "Yes": 0.2653698707936959
+    }
+  },
+  "chi_square": {
+    "Contract": {
+      "feature": "Contract",
+      "chi2": 1184.5965720837926,
+      "p_value": 5.863038300673391e-258,
+      "dof": 2,
+      "cramers_v": 0.40979839182553446,
+      "significant_at_0.05": true,
+      "contingency_table": {
+        "No": {
+          "Month-to-month": 2220,
+          "One year": 1307,
+          "Two year": 1647
+        },
+        "Yes": {
+          "Month-to-month": 1655,
+          "One year": 166,
+          "Two year": 48
+        }
+      }
+    },
+    "PaymentMethod": {
+      "feature": "PaymentMethod",
+      "chi2": 648.1423274814,
+      "p_value": 3.6823546520097993e-140,
+      "dof": 3,
+      "cramers_v": 0.3026771381187204,
+      "significant_at_0.05": true,
+      "contingency_table": {
+        "No": {
+          "Bank transfer (automatic)": 1286,
+          "Credit card (automatic)": 1290,
+          "Electronic check": 1294,
+          "Mailed check": 1304
+        },
+        "Yes": {
+          "Bank transfer (automatic)": 258,
+          "Credit card (automatic)": 232,
+          "Electronic check": 1071,
+          "Mailed check": 308
+        }
+      }
+    },
+    "InternetService": {
+      "feature": "InternetService",
+      "chi2": 732.309589667794,
+      "p_value": 9.571788222840544e-160,
+      "dof": 2,
+      "cramers_v": 0.3220367323307425,
+      "significant_at_0.05": true,
+      "contingency_table": {
+        "No": {
+          "DSL": 1962,
+          "Fiber optic": 1799,
+          "No": 1413
+        },
+        "Yes": {
+          "DSL": 459,
+          "Fiber optic": 1297,
+          "No": 113
+        }
+      }
+    },
+    "TechSupport": {
+      "feature": "TechSupport",
+      "chi2": 828.1970684587394,
+      "p_value": 1.4430840279998987e-180,
+      "dof": 2,
+      "cramers_v": 0.3425261587493695,
+      "significant_at_0.05": true,
+      "contingency_table": {
+        "No": {
+          "No": 2027,
+          "No internet service": 1413,
+          "Yes": 1734
+        },
+        "Yes": {
+          "No": 1446,
+          "No internet service": 113,
+          "Yes": 310
+        }
+      }
+    },
+    "OnlineSecurity": {
+      "feature": "OnlineSecurity",
+      "chi2": 849.9989679615965,
+      "p_value": 2.661149635176552e-185,
+      "dof": 2,
+      "cramers_v": 0.34701606688272874,
+      "significant_at_0.05": true,
+      "contingency_table": {
+        "No": {
+          "No": 2037,
+          "No internet service": 1413,
+          "Yes": 1724
+        },
+        "Yes": {
+          "No": 1461,
+          "No internet service": 113,
+          "Yes": 295
+        }
+      }
+    }
+  },
+  "numeric": {
+    "tenure": {
+      "column": "tenure",
+      "test": "Mann-Whitney U",
+      "statistic": 2515538.0,
+      "p_value": 2.419635517951866e-208,
+      "mean_churn": 17.979133226324237,
+      "mean_stay": 37.56996521066873,
+      "significant_at_0.05": true
+    },
+    "MonthlyCharges": {
+      "column": "MonthlyCharges",
+      "test": "Mann-Whitney U",
+      "statistic": 6003125.5,
+      "p_value": 3.311627651988585e-54,
+      "mean_churn": 74.44133226324237,
+      "mean_stay": 61.26512369540008,
+      "significant_at_0.05": true
+    },
+    "TotalCharges": {
+      "column": "TotalCharges",
+      "test": "Mann-Whitney U",
+      "statistic": 3381224.0,
+      "p_value": 5.685033866207314e-83,
+      "mean_churn": 1531.7960941680042,
+      "mean_stay": 2549.911441824507,
+      "significant_at_0.05": true
+    }
+  },
+  "churn_rate_by_contract": {
+    "Month-to-month": 0.4270967741935484,
+    "One year": 0.11269517990495587,
+    "Two year": 0.02831858407079646
+  }
+}

@@ -1,0 +1,39 @@
+# Virtual environment
+venv/
+env/
+.venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Jupyter
+*.ipynb_checkpoints
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+
+# Logs and scratch files produced during setup
+*.log
+
+# ---------------------------------------------------------------------------
+# Large / regenerable artifacts (kept out of git to keep the repo lean).
+# Everything below is reproducible with:  python -m src.generate_reports
+# ---------------------------------------------------------------------------
+
+# Trained model binary (large, regenerable)
+models/*.joblib
+
+# Processed/cleaned dataset (regenerable from data/raw)
+data/processed/*.csv
+
+# NOTE: the following are intentionally KEPT in git for portfolio value, since
+# they are small and let visitors see results without running the pipeline:
+#   - data/raw/ ............. the public IBM Telco dataset
+#   - reports/visualisations/ generated charts (EDA, ROC, SHAP, etc.)
+#   - reports/analysis_summary.json and models/*.json metrics/metadata
