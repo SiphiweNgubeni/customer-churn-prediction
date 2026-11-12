@@ -139,7 +139,7 @@ customer-churn-prediction/
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/<your-username>/customer-churn-prediction.git
+git clone https://github.com/SiphiweNgubeni/customer-churn-prediction.git
 cd customer-churn-prediction
 
 # 2. Create and activate a virtual environment (Python 3.13 recommended)
